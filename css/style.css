@@ -220,15 +220,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Nav Meu Container */
 #nav-menu-container {
     float:none;
-    margin:0 auto;
+    margin: 0 auto;
     display: block;
     text-align: center;
-}
-
-@media (min-width: 1024px) {
-    #nav-menu-container {
-    padding-right: 60px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -668,6 +662,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     opacity: 1;
     transition: 0.3s;
     padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+    #skills i {
+        font-size: 3em;
+    }
 }
 
 #skills i:hover {
