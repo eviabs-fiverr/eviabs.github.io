@@ -3,6 +3,7 @@
   Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
   Author: BootstrapMade.com
   License: https://bootstrapmade.com/license/
+  License: https://bootstrapmade.com/license/
 */
 /*--------------------------------------------------------------
 # General
@@ -109,23 +110,33 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro #logo {
     padding-bottom: 20px;
-
 }
 
 #intro #logo .logo-first {
     color: #fff;
     padding-bottom: 0;
     border-bottom: 4px solid #3e86b0;
+    display: inline-block;
+    /*display: block;*/
+    /*float:left;*/
 }
 
 #intro #logo .logo-last {
     color: #3e86b0;
     padding-bottom: 0;
     border-bottom: 4px solid #fff;
+    display: inline-block;
+    /*display: block;*/
+    /*float:right;*/
+}
+
+#intro .social-links {
+
+
 }
 
 #intro #logo span {
-    margin-left: -18px;
+    margin-left: 0;
 }
 
 #intro #logo h1 {
@@ -670,7 +681,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #projects .projects-item figure {
-  background: #000;
+  background: #fff;
   overflow: hidden;
   height: 240px;
   position: relative;
