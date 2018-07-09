@@ -140,6 +140,7 @@ jQuery(document).ready(function( $ ) {
         autoplay: true,
         dots: true,
         loop: false,
+        rewind: true,
         responsive: { 0: { items: 3 }, 768: { items: 4 }, 900: { items: 6 }
         }
     });
