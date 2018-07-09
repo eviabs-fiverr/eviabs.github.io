@@ -14,7 +14,16 @@ jQuery(document).ready(function( $ ) {
     });
 
     // Initiate the wowjs animation library
-    new WOW().init();
+    wow = new WOW(
+        {
+            boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       false,
+            live:         true        // default
+        }
+    )
+    wow.init();
 
     // Initiate superfish on nav menu
     $('.nav-menu').superfish({
