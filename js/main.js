@@ -1,4 +1,4 @@
-var types = ["stars", "polygons", "snow", "nyan-cat", "bubbles", "bubbles2", "squares"];
+var types = ["stars", "polygons", "snow", "bubbles2"];
 var last_type = 0;
 
 jQuery(document).ready(function( $ ) {
