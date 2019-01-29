@@ -1,3 +1,6 @@
+var types = ["stars", "polygons", "snow", "nyan-cat", "bubbles", "bubbles2", "squares"];
+var last_type = 0;
+
 jQuery(document).ready(function( $ ) {
 
     // Back to top button
@@ -144,4 +147,28 @@ jQuery(document).ready(function( $ ) {
         responsive: { 0: { items: 3 }, 768: { items: 4 }, 900: { items: 6 }
         }
     });
+
+
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional));
+    * More options: https://vincentgarreau.com/particles.js/#default
+    */
+    var loadParticlesJS = function(type) {
+        if (type === undefined || type === "") {
+            last_type = (last_type + 1) % types.length;
+            type = types[last_type];
+        }
+
+        particlesJS.load('particles-js', 'lib/particles/particlesjs-config-' + type + '.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    };
+
+    // Change particles on logo click
+    $('#intro a').on('click', function() {
+        // loadParticlesJS(types[Math.floor(Math.random()*types.length)]); // for random
+        loadParticlesJS();                                                 // for sequential
+    });
+
+    loadParticlesJS();
+
 });
