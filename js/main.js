@@ -164,9 +164,11 @@ jQuery(document).ready(function( $ ) {
     };
 
     // Change particles on logo click
-    $('#intro a').on('click', function() {
-        // loadParticlesJS(types[Math.floor(Math.random()*types.length)]); // for random
-        loadParticlesJS();                                                 // for sequential
+    $('#logo a').on('click', function() {
+        if ($('#mobile-nav-toggle').css('display') === "none") {
+            // loadParticlesJS(types[Math.floor(Math.random()*types.length)]); // for random
+            loadParticlesJS();                                                 // for sequential
+        }
     });
 
     loadParticlesJS();
